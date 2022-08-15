@@ -14,6 +14,9 @@ export default function Home({ time }) {
       <h2>
         <Link href="/isr">isr로</Link>
       </h2>
+      <h2>
+        <Link href="/product/first-item">first-item 로</Link>
+      </h2>
     </>
   );
 }
