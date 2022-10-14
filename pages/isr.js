@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+
+// revalidate 값만 만큼,
+// 특정 주기로 데이터를 새로 fetch해 와서 페이지를 재생성한다.
 export async function getStaticProps() {
   console.log("isr");
   return {
@@ -15,7 +18,7 @@ export default function ISR({ time }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="title">Hello World</h1>
+      {/* <h1 className="title">Hello World</h1> */}
       <main>
         <h2 className="title">{time}</h2>
       </main>
