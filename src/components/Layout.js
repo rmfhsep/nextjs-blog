@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function Layout({ children }) {
+
   return (
     <div className="container">
       <Head>
@@ -20,8 +21,6 @@ export default function Layout({ children }) {
           Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
-
-      {/* <style jsx>{``}</style> */}
 
       <style jsx global>{`
         html,
